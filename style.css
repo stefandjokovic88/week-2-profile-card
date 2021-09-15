@@ -3,9 +3,11 @@
 body, html {
     background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), hsl(185, 75%, 39%);
     background-repeat: no-repeat;
-    background-position: right 52vw bottom 36vh, left 50vw top 52vh;
+    background-position: right 35vw bottom 50vh, left 40vw top 45vh;
     /* overflow: hidden; */
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     height: 100%;
     margin:0px;
 }
@@ -24,27 +26,27 @@ body, html {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 20px 10px hsl(185, 75%, 39%);
-    width: 325px;
+    width: 320px;
  }
 
- .card .pattern {
+.pattern {
      height: 140px;
  }
 
-.card .pattern img {
+.pattern img {
     height: 100%;
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.card .picture {
+.picture {
     height: 150px;
     display: flex;
     justify-content: center;
     align-content: space-evenly;
 }
 
-.card .picture img {
+.picture img {
     border-radius: 50%;
     border: 5px solid white;
     position: fixed;
@@ -52,58 +54,50 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
-.card .picture p {
+.picture p {
     margin-top: 70px;
     text-align: center;
-    font-size: 15px;
     line-height: 30px;
-    color: hsl(227, 10%, 46%);
-    font-weight: 400;
     opacity: 0.8;
 }
 
-.card .picture p span {
-    font-size: 18px;
+span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
 }
 
-.card .picture p span span {
-    color: black;
-    font-weight: 700;
+.city {
+    font-size: 15px;
 }
 
-.card .data {
+.data {
     border-top: 1px solid hsl(0, 0%, 59%);
     display: flex;
     flex-direction: row;
     height: 80px;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 20px;
-    color: hsl(227, 10%, 46%);
     opacity: 0.8;
-    letter-spacing: 1px;
     text-align: center;
 }
 
-.card .data .stats span {
-    font-size: 18px;
-    color: black;
-    font-weight: 700;
-    letter-spacing: 0px;
+.stats span {
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 
-@media screen and (max-width: 375px) {
-    /* body {
-        background-position: right 35vw bottom 50vh, left 40vw top 45vh;
-    } */
+/* @media screen and (max-width: 375px) {
     .card {
-        width: 325px;
+        width: 320px;
     }
-}
+} */
 
 @media screen and (min-width:376px) and (max-width: 1440px) {
+    body {
+        background-position: right 52vw bottom 36vh, left 50vw top 52vh;
+    }
+
     .card {
         width: 350px;
     }
